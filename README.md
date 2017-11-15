@@ -23,7 +23,7 @@ It reads your :key: WPM PRO key from the **environment** or a **.env file**.
       "package": {
         "name": "deliciousbrains/wp-migrate-db-pro",
         "type": "wordpress-plugin",
-        "version": "1.4.6",
+        "version": "1.8.1",
         "dist": {
           "type": "zip",
           "url": "https://deliciousbrains.com/dl/wp-migrate-db-pro-latest.zip?"
@@ -39,7 +39,7 @@ It reads your :key: WPM PRO key from the **environment** or a **.env file**.
       "package": {
         "name": "deliciousbrains/wp-migrate-db-pro-media-files",
         "type": "wordpress-plugin",
-        "version": "1.3.1",
+        "version": "1.4.9",
         "dist": {
           "type": "zip",
           "url": "https://deliciousbrains.com/dl/wp-migrate-db-pro-media-files-latest.zip?"
@@ -69,6 +69,13 @@ WPM_PRO_KEY=Your-Key-Here
 ```sh
 composer require deliciousbrains/wp-migrate-db-pro:*
 ```
+
+**4. Require WPM PRO Media Files**
+
+```sh
+composer require deliciousbrains/wp-migrate-db-pro-media-files:*
+```
+
 Unfortunately, DeliciousBrains is not exposing a way of retrieving different versions of their plugin.
 Because of this, changing the version in the package section will download the latest version regardless.
 You have to manually change the version in your `composer.json` file to manually trigger composer to download a new package.
